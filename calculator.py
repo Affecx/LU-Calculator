@@ -1,12 +1,24 @@
 # SCCM4910 lab project - a four-operation calculator
 def add(a, b):
     return a + b
+
 def subtract(a, b):
     return a - b
+
 def multiply(a, b):
     return a * b
+
 def divide(a, b):
     return a / b
+
+def CircleArea(r):
+    if r >= 0:
+        return 3.14 * r * r
+    else:
+        return "NaN"
+
+
+#main function
 
 def main():
     while True:

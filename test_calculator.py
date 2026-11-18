@@ -1,4 +1,4 @@
-from calculator import add, subtract, multiply, divide
+from calculator import add, subtract, multiply, divide, CircleArea
 import pytest
 
 @pytest.mark.parametrize("a, b, expected", [ (2, 3, 5), (-2, -3, -5), (0, 0, 0), ])
@@ -23,4 +23,7 @@ def test_multiply():
 
 def test_divide_uneven():
     assert divide(7, 2) == 3.5
+
+def test_circleArea():
+    assert CircleArea(-4) == "Error"
 
